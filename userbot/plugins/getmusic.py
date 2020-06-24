@@ -48,7 +48,7 @@ async def _(event):
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=("**Song Name :**"+ query + "\n**Uploaded by :** [Kannan](@kannappan04) 👻\n**Channel :** [പാട്ടുപെട്ടി](t.me/puthiyapaattukal) ✅"),
+                caption=("**Song Name :**"+ query + "\n**Uploaded by :** [Kannan](@kannappan04) 🧞\n**Channel :** [പാട്ടുപെട്ടി](t.me/puthiyapaattukal) 🎶"),
                 reply_to=reply_to_id
             )
     await event.delete()
