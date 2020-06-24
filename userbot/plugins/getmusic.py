@@ -26,7 +26,7 @@ def bruh(name):
 
 @borg.on(admin_cmd(pattern="song ?(.*)"))
 async def _(event):
-    await event.edit("wi8..! I am finding your song....`")
+    await event.edit("yeah ! let me find that song dude.. ⏳️ ")
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
@@ -42,13 +42,13 @@ async def _(event):
     bruh(str(query))
     l = glob.glob("*.mp3")
     loa = l[0]
-    await event.edit("yeah..! i found something wi8..🥰")
+    await event.edit("Got it.. .😎")
     await borg.send_file(
                 event.chat_id,
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=query,
+                caption=("**Song Name :**"+ query + "\n**Uploaded by :** [Kannan](@kannappan04) 👻\n**Channel :** [പാട്ടുപെട്ടി](t.me/puthiyapaattukal) ✅"),
                 reply_to=reply_to_id
             )
     await event.delete()
