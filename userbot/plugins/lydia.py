@@ -56,7 +56,7 @@ async def user(event):
             text_rep = session.think_thought(msg)
             wait_time = 0
             for i in range(len(text_rep)):
-                wait_time = wait_time + 0.1
+                wait_time = wait_time + 1.5
             await asyncio.sleep(wait_time)
             await event.reply(text_rep)
     except (KeyError, TypeError):
