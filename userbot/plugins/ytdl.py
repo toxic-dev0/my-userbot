@@ -207,7 +207,7 @@ async def download_video(v_url):
             v_url.chat_id,
             f"{ytdl_data['id']}.mp4",
             supports_streaming=True,
-            caption=ytdl_data['title'],
+            caption="`file uploaded Successfully` \n`please join` @malayalamstatusvideospage 🌀",
             progress_callback=lambda d, t: asyncio.get_event_loop(
             ).create_task(
                 progress(d, t, v_url, c_time, "Uploading..",
